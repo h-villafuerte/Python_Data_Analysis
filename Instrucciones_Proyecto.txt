@@ -1,0 +1,12 @@
+Tu amigo sospecha que las películas son cada vez más cortas y ha encontrado algunas pruebas iniciales de ello. 
+Una vez que haya alcanzado su máximo interés, realizará un análisis de datos exploratorio en los datos netflix_data.csv para comprender qué puede estar contribuyendo a que las películas se acorten con el tiempo. 
+Su análisis seguirá estos pasos:
+
+- Cargue el archivo CSV y guárdelo como netflix_df.
+- Filtre los datos para eliminar programas de TV y almacenarlos como netflix_subset.
+- Investigue los datos de las películas de Netflix, manteniendo solo las columnas "título", "país", "género", "año_estreno", "duración" y guárdelas en un nuevo DataFrame llamado netflix_movies.
+- Filtre netflix_movies para encontrar películas que duren estrictamente menos de 60 minutos y guarde el DataFrame resultante como short_movies; Inspeccione el resultado para encontrar posibles factores contribuyentes.
+- Usando un bucle for y declaraciones if/elif, recorra las filas de netflix_movies y asigne los colores de su elección a cuatro grupos de géneros ("Niños", "Documentales", "Stand-Up" y "Otros" para todo lo demás). 
+  Guarde los resultados en una lista de colores. 
+  Inicialice un objeto de figura matplotlib llamado fig y cree un diagrama de dispersión para la duración de la película por año de lanzamiento usando la lista de colores para colorear los puntos y usando las etiquetas "Año de lanzamiento" para el eje x, "Duración (min)" para el eje y. eje y el título "Duración de la película por año de estreno".
+- Después de inspeccionar la trama, responda la pregunta "¿Estamos seguros de que las películas son cada vez más cortas?" asignando "sí" o "no" a la respuesta variable.
